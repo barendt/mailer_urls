@@ -36,6 +36,9 @@ Rails.application.configure do
   # Raises helpful error messages.
   config.assets.raise_runtime_errors = true
 
+  # Use test delivery method since this app is just to demonstrate some behavior
+  config.action_mailer.delivery_method = :test
+
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
 end
